@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="header">
+        <nav id="menu" class="menu" style="color: brown;">
+            <ul>
+                <link>Dashboard<link>
+                <link>About Us<link>
+                <link>Contact Us<link>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <article>
+            <button id="toggleMenu" class="toggleMenu">Menu</button>
+            <h1>Event Listener examples</h1>
+            <div id="gaifafaa" class="gaifafaa"><p><em>WELCOME TO</em> <strong>TROOP EMPIRE & Co&REG;.</strong></p></div>
+            <p id="para" class="para">MouseOver this text to remove the event listener</p>
+            <button id="kamtuu" class="kamtuu">Change background color</button>
+            <script>
+            function changeBgColor() {
+                document.body.style.backgroundColor = "lightblue";
+            }
+            </script>
+
+            <button onclick="changeBgColor()">Change background</button>
+        </article>
+        <section>
+            <dialog id="nonModalDialogue" class="nonModalDialogue">
+                <P>Do you know that this is a non-modal dialogue?</P>
+                <button id="closeNonModalDialogue">Yes</button>
+            </dialog>
+            <button id="openNonModalDialogue">Non Modal Dialogue</button>
+        </section>
+        <aside style="padding: 200px;">
+            <div class="square" id="square"></div>
+            <button id="playBtn">Play</button>
+            <button id="pauseBtn">Pause</button>
+            <button id="reverseBtn">Reverse</button>
+        </aside>
+        <section>
+            <dialog id="modalDialogue" class="modalDialogue">
+                <P>Have you seen the dialogue?</P>
+                <button id="closeDialogue" style="display: flex; justify-content: center; align-items: center; background-color: brown;">Yes</button>
+            </dialog>
+            <button id="openDialogue">Modal Dialogue</button>
+        </section>
+    </main>
+        <canvas id="my-canvas"></canvas>
+    <footer>
+        <div id="myfooter" class="myfooter" style="display: flex; justify-content: center; align-items: center;padding: 30px;">
+            <img src="data:image/png;base64,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" style="border-radius: 20px; width: 50px; height: 50px; zoom: 200%;">
+            <p style="padding-left: 20px;"><strong>&COPY; 2025 All rigths reserved TROOP EMPIRE & Co&REG;.</strong></p>
+        </div>
+    </footer>
+</body>
+
+</html>
+

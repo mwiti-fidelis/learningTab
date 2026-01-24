@@ -1,0 +1,78 @@
+body{
+    background: grey;
+    overflow-x: hidden;
+}
+button {
+  background: linear-gradient(135deg, #4da3ff, #007bff);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 10px rgba(0, 123, 255, 0.2);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #66b3ff, #3399ff);
+  box-shadow: 0 6px 14px rgba(0, 123, 255, 0.3);
+  transform: translateY(-2px);
+}
+.menu{
+    display: none;
+    background: grey;
+    color: brown;
+}
+.menu.show{
+    display: list-item;
+}
+
+#toggleMenu{
+    color: brown;
+    background: pink;
+    border: none;
+    border-radius: 20px;
+    width: 80px;
+    height: 40px
+}
+/* 
+.header .menu {
+  display: none;
+}
+
+.header.show-menu.menu {
+  display: block;
+} */
+
+.gaifafaa{
+  border: none;
+  background-color: transparent;
+  color: red;
+  width: 350px;
+  height: 60px;
+  font-size: 18px;
+  border-radius: 10px;
+  padding: 8px;
+  position: relative;
+}
+
+footer{
+  color: red;
+  background-color: lime;
+  border: none;
+  width: auto;
+  height: auto;
+  border-radius: 20px;
+  margin-top: 67%;
+}
+
+.square {
+  background: #1b1b32;
+  width: 10rem;
+  aspect-ratio: 1/1;
+  margin-bottom: 20px;
+  border-radius: 20px;
+  position: relative;
+}
