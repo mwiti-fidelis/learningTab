@@ -139,3 +139,26 @@ openNonModalDialogue.addEventListener("click", ()=>{
 closeNonModalDialogue.addEventListener("click", ()=>{
   nonModalDialogue.close();
 });
+
+//Delegation and propagation
+//DELEGATION
+const delegateP = document.querySelector(".delegateP");
+delegateP.addEventListener("click", (event)=>{
+  console.log(event.target);
+  event.target.style.color = "red"; 
+  console.log("Color changed to red for the paragraph element.")
+})
+
+//PROPAGATION & STOP-PROPAGATION
+
+// const p = document.querySelector(".delegateP");
+// const span = document.querySelector("span");
+// p.addEventListener("click", (event) => {
+//   console.log("P listener: ");
+//   console.log(event.target);
+// });
+// span.addEventListener("click", (event) => {
+//   console.log("Span listener: ");
+//   console.log(event.target);
+//   event.stopPropagation();
+// });

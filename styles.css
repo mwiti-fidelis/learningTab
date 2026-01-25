@@ -76,3 +76,8 @@ footer{
   border-radius: 20px;
   position: relative;
 }
+
+.delegateP{
+  color: lime;
+  font-size: 30px;
+}
