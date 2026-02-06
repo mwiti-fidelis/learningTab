@@ -1,0 +1,31 @@
+body{
+  background: linear-gradient(to top,rgb(218, 159, 159), coral);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+#text-input{
+  border: black solid;
+  border-radius: 20px;
+  height: 150px;
+  width: 300px;
+  padding: 10px;
+  font-size: 20px;
+}
+div, header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex: auto;
+}
+#char-count{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  font-weight: bold;
+}
