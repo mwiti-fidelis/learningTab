@@ -1,0 +1,114 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --dark-grey: #0a0a23;
+  --light-grey: #f5f6f7;
+  --white: #ffffff;
+  --black: #000;
+}
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.logo-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  background: radial-gradient(circle, rgba(255,255,255,0.2) 0%, transparent 70%);
+  padding-bottom: 20px;
+}
+.logo-img{
+  width: 120px;
+  height: auto;
+  border-radius: 56px;
+  filter: drop-shadow(0 0 10px rgba(0, 0, 0, 0.3));
+  transition: transform 0.3s ease;
+  animation: spin 5s linear infinite;
+}
+.logo-img:hover {
+  transform: scale(1.1);
+}
+
+body {
+  text-align: center;
+  padding: 10px;
+  background: repeating-linear-gradient(
+    45deg,
+    #001f8d,
+    #001f8d 40px,
+    #002eb8 40px,
+    #002eb8 80px
+  );
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.title,
+.options-label,
+.team-stats,
+footer {
+  color: var(--white);
+}
+
+.title {
+  margin: 1.3rem 0;
+}
+
+.team-stats {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  font-size: 1.3rem;
+  margin: 1.2rem 0;
+  font-weight: bold;
+}
+
+.options-label {
+  font-size: 1.2rem;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.player-card {
+  background-color: var(--light-grey);
+  padding: 1.3rem;
+  margin: 1.2rem;
+  width: 300px;
+  border-radius: 15px;
+}
+
+@media (max-width: 768px) {
+  .team-stats {
+    flex-direction: column;
+  }
+}
+h1{
+  color: transparent;
+  -webkit-text-stroke: 1.5px blue;
+  font-family: sans serif;
+  text-transform: uppercase;
+  text-shadow: 0 0 1px #ffffff;
+}
+#players{
+  cursor: pointer;
+  width: 200px;
+  height: 25px;
+  border-radius: 12px;
+  /* transition: transform 0.3s ease, filter 0.3s ease;  */
+}
